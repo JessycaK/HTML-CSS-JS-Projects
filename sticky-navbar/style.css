@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+
+.top-container {
+    background-image: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbXB1dGVyfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-container h1 {
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+.text {
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
+
+.navbar {
+    display: flex;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    transition: background-color 0.4s;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: black;
+    font-family: cursive;
+}
+
+.navbar ul li a:hover {
+    color: rgb(178, 38, 38);
+}
+
+.navbar.active {
+    background-color: black;
+}
+
+.navbar.active ul li a {
+    color: white;
+}
